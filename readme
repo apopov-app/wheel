@@ -1,0 +1,13 @@
+Example
+-----
+    myWheel := wheel.New()
+    err := myWheel.AddValue(0.60, "60% chance A")
+    if err != nil {
+        log.Fatal(err)
+    }
+    err = myWheel.AddValue(0.40, "40% chance B")
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    randomValue := myWheel.Spin()
